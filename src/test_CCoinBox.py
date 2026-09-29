@@ -19,6 +19,11 @@ class Test_CCoinBox(unittest.TestCase):
         self.assertEqual(coinBox.get_vente_permise(), False)
         self.assertEqual(piece, 1)
 
+    def test_seuil_vente(self):
+        coinBox = CCoinBox()
+        coinBox.ajouter_25c()
+        self.assertEqual(coinBox.get_vente_permise(), False) 
+
     def test_permet_une_double_vente(self):
         coinBox = CCoinBox()
         coinBox.ajouter_25c()

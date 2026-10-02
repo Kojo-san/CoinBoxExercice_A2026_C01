@@ -1,4 +1,4 @@
-#LOG3430 - Exercice GitHub Actions
+#LOG3430  Exercice GitHub Actions
 name: Python CoinBox Build
 
 on:
